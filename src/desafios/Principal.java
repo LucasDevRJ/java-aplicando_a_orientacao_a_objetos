@@ -19,6 +19,7 @@ public class Principal {
         int resultado = calculadora.calcularDobroDoNumero(numero);
         System.out.printf("%d x 2 = %d", numero, resultado);
         System.out.println();
+        System.out.println();
 
         //Exercício 3
         Musica musica = new Musica();
@@ -33,6 +34,7 @@ public class Principal {
         double avalicao = musica.calcularMediaDeAvaliacoes();
         String ficha = musica.exibeFichaTecnica(avalicao);
         System.out.println(ficha);
+        System.out.println();
 
         //Exercício 4
         Carro carro = new Carro();
@@ -42,5 +44,12 @@ public class Principal {
         carro.calcularIdadeDoCarro();
         String fichaTecnica = carro.exibeFichaTecnica();
         System.out.println(fichaTecnica);
+        System.out.println();
+
+        //Exercício 5
+        Aluno aluno = new Aluno();
+        aluno.nome = "Lucas";
+        aluno.idade = 26;
+        aluno.exibeInformacoesDoAluno();
     }
 }

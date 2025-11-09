@@ -13,6 +13,7 @@ public class Aluno {
     int idade;
 
     public void exibeInformacoesDoAluno() {
+        System.out.println("----------|Aluno|----------");
         System.out.println("Nome: " + this.nome);
         System.out.println("Idade: " + this.idade);
     }
