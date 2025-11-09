@@ -11,7 +11,7 @@ public class Principal {
 
         Scanner entrada = new Scanner(System.in);
 
-//        Exercício 2
+        //Exercício 2
         Calculadora calculadora = new Calculadora();
         System.out.print("Digite um número: ");
         int numero = entrada.nextInt();
@@ -33,5 +33,14 @@ public class Principal {
         double avalicao = musica.calcularMediaDeAvaliacoes();
         String ficha = musica.exibeFichaTecnica(avalicao);
         System.out.println(ficha);
+
+        //Exercício 4
+        Carro carro = new Carro();
+        carro.modelo = "Onix";
+        carro.cor = "Prata";
+        carro.anoDeLancamento = 2012;
+        carro.calcularIdadeDoCarro();
+        String fichaTecnica = carro.exibeFichaTecnica();
+        System.out.println(fichaTecnica);
     }
 }
