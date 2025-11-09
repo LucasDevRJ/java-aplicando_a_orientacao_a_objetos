@@ -6,4 +6,8 @@
 package desafios;
 
 public class Calculadora {
+
+    public double calcularNumeroAoQuadrado(double numero) {
+        return Math.pow(numero, 2);
+    }
 }
