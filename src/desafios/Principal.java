@@ -20,5 +20,7 @@ public class Principal {
 
         int resultado = calculadora.calcularDobroDoNumero(numero);
         System.out.printf("%d x 2 = %d", numero, resultado);
+
+        //Exercício 3
     }
 }
