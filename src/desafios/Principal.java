@@ -11,16 +11,27 @@ public class Principal {
 
         Scanner entrada = new Scanner(System.in);
 
-        //Exercício 2
+//        Exercício 2
         Calculadora calculadora = new Calculadora();
         System.out.print("Digite um número: ");
         int numero = entrada.nextInt();
 
-        entrada.close();
-
         int resultado = calculadora.calcularDobroDoNumero(numero);
         System.out.printf("%d x 2 = %d", numero, resultado);
+        System.out.println();
 
         //Exercício 3
+        Musica musica = new Musica();
+        musica.titulo = "Maremotos";
+        musica.artista = "Supercombo";
+        musica.anoDeLancamento = 2019;
+        for (int i = 0; i < 3; i++) {
+            System.out.print("Digite sua avaliação: ");
+            double avaliacao = entrada.nextDouble();
+            musica.avaliarMusica(avaliacao);
+        }
+        double avalicao = musica.calcularMediaDeAvaliacoes();
+        String ficha = musica.exibeFichaTecnica(avalicao);
+        System.out.println(ficha);
     }
 }

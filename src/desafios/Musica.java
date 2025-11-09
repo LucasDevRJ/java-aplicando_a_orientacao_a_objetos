@@ -15,7 +15,7 @@ public class Musica {
     double avaliacao;
     int quantidadeDeAvaliacoes;
 
-    public String exibeFichaTecnica() {
+    public String exibeFichaTecnica(double avalicao) {
         return """
                 |----------|Ficha Técnica|----------|
                 Título: %s
@@ -23,7 +23,16 @@ public class Musica {
                 Ano de Lançamento: %d
                 Avaliação: %.2f
                 Quantidade de Avaliações: %d
-                """.formatted(this.titulo, this.artista, this.anoDeLancamento,
-                    this.avaliacao, this.quantidadeDeAvaliacoes);
+                """.formatted(this.titulo, this.artista, this.anoDeLancamento, avalicao, this.quantidadeDeAvaliacoes);
+    }
+
+    public void avaliarMusica(double avaliacao) {
+        this.quantidadeDeAvaliacoes++;
+        this.avaliacao += avaliacao;
+        System.out.println("Avaliação realizada com sucesso!");
+    }
+
+    public double calcularMediaDeAvaliacoes() {
+        return this.avaliacao / this.quantidadeDeAvaliacoes;
     }
 }
