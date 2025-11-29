@@ -5,7 +5,7 @@
  * e calcular a média de avaliações.
  */
 
-package desafios;
+package desafios.desafio01;
 
 public class Musica {
 

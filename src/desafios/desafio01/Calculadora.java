@@ -3,7 +3,7 @@
     e retorna o dobro desse número.
  */
 
-package desafios;
+package desafios.desafio01;
 
 public class Calculadora {
 

@@ -3,7 +3,7 @@
  * e métodos para exibir a ficha técnica e calcular a idade do carro.
  */
 
-package desafios;
+package desafios.desafio01;
 
 import java.time.LocalDate;
 
