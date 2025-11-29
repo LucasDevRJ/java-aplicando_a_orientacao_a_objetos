@@ -27,4 +27,13 @@ public class ContaBancaria {
     public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
+
+    public void exibeContaBancaria() {
+        String informacoes = """
+                Número da conta: %d
+                Saldo: %.2f
+                Titular: %s
+                """.formatted(getNumeroConta(), getSaldo(), titular);
+        System.out.println(informacoes);
+    }
 }
