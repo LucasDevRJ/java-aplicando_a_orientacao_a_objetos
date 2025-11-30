@@ -28,5 +28,12 @@ public class Principal {
         double media = aluno.calcularMedia();
         System.out.printf("\nO aluno %s tirou a nota %.2f no teste e %.2f na prova, ficando com a média de %.2f.",
                 aluno.getNome(), aluno.getTeste(), aluno.getProva(), media);
+        System.out.println();
+        System.out.println();
+
+        Livro livro = new Livro();
+        livro.setTitulo("Simplificando o Autismo 2.0");
+        livro.setAutor("Dr. Thiago Castro");
+        livro.exibirDetalhes();
     }
 }
