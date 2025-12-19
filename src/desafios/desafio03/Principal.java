@@ -20,5 +20,16 @@ public class Principal {
         Gato gato = new Gato();
         gato.emitirSom();
         gato.arranharMoveis();
+
+        System.out.println("-------------------------------");
+        ContaCorrente contaCorrente = new ContaCorrente();
+        contaCorrente.depositar(100);
+        contaCorrente.consultarSaldo();
+        contaCorrente.cobrarTarifaMensal();
+        contaCorrente.consultarSaldo();
+        contaCorrente.sacar(10);
+        contaCorrente.consultarSaldo();
+        contaCorrente.cobrarTarifaMensal();
+        contaCorrente.consultarSaldo();
     }
 }
