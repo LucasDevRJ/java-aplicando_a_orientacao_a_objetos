@@ -17,5 +17,11 @@ public class Principal {
 
         TabuadaMultiplicacao tabuadaMultiplicacao = new TabuadaMultiplicacao();
         tabuadaMultiplicacao.mostrarTabuada(5);
+        System.out.println("-----------------------------");
+        ConversorTemperaturaPadrao conversorTemperaturaPadrao = new ConversorTemperaturaPadrao();
+        double fahrenheit = conversorTemperaturaPadrao.celsiusParaFahrenheit(30);
+        double celsius = conversorTemperaturaPadrao.fahrenheitParaCelsius(50);
+        System.out.printf("%.2f°F\n", fahrenheit);
+        System.out.printf("%.2f°C\n", celsius);
     }
 }
