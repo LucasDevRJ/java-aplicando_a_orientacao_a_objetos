@@ -13,5 +13,9 @@ public class Principal {
 
         System.out.println("Área: " + area + "cm²");
         System.out.println("Perímetro: " + perimetro + "cm²");
+        System.out.println("-----------------------------");
+
+        TabuadaMultiplicacao tabuadaMultiplicacao = new TabuadaMultiplicacao();
+        tabuadaMultiplicacao.mostrarTabuada(5);
     }
 }
