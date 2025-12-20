@@ -31,5 +31,17 @@ public class Principal {
         contaCorrente.consultarSaldo();
         contaCorrente.cobrarTarifaMensal();
         contaCorrente.consultarSaldo();
+
+        System.out.println("-------------------------------");
+        NumerosPrimos numerosPrimos = new NumerosPrimos();
+        numerosPrimos.listarPrimos(20);
+
+        VerificadorPrimo verificadorPrimo = new VerificadorPrimo();
+        System.out.println();
+        System.out.println();
+        verificadorPrimo.verificarSeEhPrimo(7);
+
+        GeradorPrimo geradorPrimo = new GeradorPrimo();
+        geradorPrimo.gerarProximoPrimo(5);
     }
 }
