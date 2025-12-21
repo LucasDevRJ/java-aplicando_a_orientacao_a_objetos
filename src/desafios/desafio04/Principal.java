@@ -23,5 +23,19 @@ public class Principal {
         double celsius = conversorTemperaturaPadrao.fahrenheitParaCelsius(50);
         System.out.printf("%.2f°F\n", fahrenheit);
         System.out.printf("%.2f°C\n", celsius);
+
+        System.out.println("-----------------------------");
+        ProdutoFisico produtoFisico = new ProdutoFisico();
+        produtoFisico.preco = 120.00;
+        produtoFisico.taxa = 2;
+        double precoFinal = produtoFisico.calcularPrecoFinal();
+        System.out.printf("Preço Final: R$%.2f\n", precoFinal);
+
+        Livro livro = new Livro();
+        livro.preco = 70;
+        livro.desconto = 5;
+        livro.taxa = 2;
+        double precoFinal2 = livro.calcularPrecoFinal();
+        System.out.printf("Preço Final: R$%.2f\n", precoFinal2);
     }
 }
