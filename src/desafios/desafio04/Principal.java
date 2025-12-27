@@ -37,5 +37,14 @@ public class Principal {
         livro.taxa = 2;
         double precoFinal2 = livro.calcularPrecoFinal();
         System.out.printf("Preço Final: R$%.2f\n", precoFinal2);
+
+        System.out.println("-----------------------------");
+        Produto produto = new Produto();
+        double precoTotal = produto.calcularPrecoTotal(10.00, 10);
+        System.out.println("Preço total do Produto: R$" + precoTotal);
+
+        Servico servico = new Servico();
+        double precoTotal2 = servico.calcularPrecoTotal(600.00, 1);
+        System.out.println("Preço total do Serviço: R$" + precoTotal2);
     }
 }
